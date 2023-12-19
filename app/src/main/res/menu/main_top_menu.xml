@@ -7,13 +7,13 @@
         android:id="@+id/searchContact"
         android:title="Search"
         android:icon="@drawable/ic_baseline_search_24"
-        app:showAsAction="always"
+        app:showAsAction="never"
         app:actionViewClass="android.widget.SearchView" />
     <item
         android:id="@+id/deleteAllContact"
-        android:title="DeleteAll"
+        android:title="delete"
         android:icon="@drawable/ic_baseline_delete_sweep_24"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="never"/>
 
 
 

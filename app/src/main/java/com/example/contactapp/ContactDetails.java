@@ -7,18 +7,14 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.format.DateFormat;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.text.Format;
-import java.util.Calendar;
-import java.util.Locale;
 
 public class ContactDetails extends AppCompatActivity {
 
     //view
-    private TextView nameTv,phoneTv,emailTv,addedTimeTv,updatedTimeTv,noteTv;
+    private TextView nameTv,phoneTv,emailTv,noteTv;
     private ImageView profileIv;
 
     private String id;
@@ -31,10 +27,8 @@ public class ContactDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_details);
 
-        //init db
         dbHelper = new DbHelper(this);
 
-        //get data from intent
         Intent intent = getIntent();
         id = intent.getStringExtra("contactId");
 

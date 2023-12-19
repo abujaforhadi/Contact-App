@@ -115,9 +115,7 @@ public class DbHelper extends SQLiteOpenHelper {
 
     // get data
     public ArrayList<ModelContact> getAllData(){
-        //create arrayList
         ArrayList<ModelContact> arrayList = new ArrayList<>();
-        //sql command query
         String selectQuery = "SELECT * FROM "+Constants.TABLE_NAME;
 
         //get readable db

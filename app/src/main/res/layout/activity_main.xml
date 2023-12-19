@@ -16,7 +16,6 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 
-<!--    fab button for add contact in app-->
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
